@@ -1,0 +1,20 @@
+{
+  "name": "student_sign_in",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "sequelize": "^6.37.3",
+    "tedious": "^18.2.0"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
