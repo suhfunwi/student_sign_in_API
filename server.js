@@ -2,6 +2,10 @@ const express = require('express')
 const apiRoutes = require('./routes/api.js')
 const app = express()
 //creates web app server
+const path = require('path')
+const staticFilePath = path.join(__dirname, 'client', 'dist')
+const staticFiles = express.static(staticFilePath)
+app.use('/', staticFiles)// request to home page
 app.use(express.json())
 //to handle json data coming in as requests
 app.use('/api', apiRoutes)
